@@ -111,9 +111,11 @@ function getHeroes() {
         return [];
 
     var arr = [];
-    $.each(data[Object.keys(data)[0]], function(key, value) {
-        arr[value.id] = value.name;
-    });
+    for (var key in Object.keys(data)) {
+        $.each(data[Object.keys(data)[key]], function(key, value) {
+            arr[value.id] = value.name;
+        });
+    }
 
     return arr;}
 
