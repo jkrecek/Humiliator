@@ -184,6 +184,7 @@ function addPlayer(id) {
         clearPlayers();
 
     $("#players_info > .loading").show();
+    $("#players_info > .empty").hide();
     $("#players_info .on_active").hide();
     $.getJSON(url, { player: id }, function(data) {
 
