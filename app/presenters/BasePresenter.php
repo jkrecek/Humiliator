@@ -85,7 +85,9 @@ abstract class BasePresenter extends Nette\Application\UI\Presenter
         $dom = $this->getDOM($url);
 
         $this->payload->id = $player;
-        $this->payload->name = $dom->query("//body/div[1]/div[1]/div[3]/div[1]")->item(0)->nodeValue;
+        $node = $dom->query("//body/div[1]/div[1]/div[3]/div[1]/div[2]/h1")->item(0);
+        $node->removeChild($dom->query("small", $node)->item(0));
+        $this->payload->name = $node->nodeValue;
         $this->payload->icon = $dom->query("//body/div[1]/div[1]/div[3]/div[1]/div[1]/div[1]/a[1]/img")->item(0)->attributes->getNamedItem("src")->nodeValue;
 
         $this->sendPayload();
