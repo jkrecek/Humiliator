@@ -1,0 +1,74 @@
+{block content}
+    <div class="jumbotron">
+        <div class="container">
+            <div class="header content">
+
+                {*<h2 class="center mb20">Cílový lamiska</h2>*}
+
+                <div class="minimized_content">
+                    <div id="team_info">
+                        <h3 class="title on_active hidden_soft">Jméno týmu:</h3>
+                        <div class="line on_active hidden_soft">
+                            <img class="icon"/>
+                            <a class="name"> </a>
+                        </div>
+
+                        <div class="loading hidden_soft"> Načítání ... </div>
+                        <hr class="on_active hidden_soft" />
+                    </div>
+
+                    <div id="players_info">
+                        <h3 class="title on_active hidden_soft">Seznam hráčů:</h3>
+                        <ul class="list on_active hidden_soft">
+
+                        </ul>
+
+                        <div class="empty center">Ještě taji nikdo nejní</div>
+                        <div class="loading hidden_soft"> Načítání ... </div>
+                    </div>
+                </div>
+
+                <div id="source_add">
+                    <div id="add_team" class="toggler add_box" data-href="{link teamData!}">
+                        <a href="#" data-toggle="Skrýt" class="btn btn-outline-inverse btn-lg">Přidat tým</a>
+                        <div>
+                            <input type="text" placeholder="id týmu"/>
+                            <img src="https://svn.dojotoolkit.org/src/trunk/demos/dnd2/images/insert-add.png">
+                        </div>
+                    </div>
+
+                    <div id="add_player" class="toggler add_box" data-href="{link playerName!}">
+                        <a href="#" data-toggle="Skrýt" class="btn btn-outline-inverse btn-lg">Přidat hráče</a>
+                        <div>
+                            <input type="text" placeholder="id hráče"/>
+                            <img src="https://svn.dojotoolkit.org/src/trunk/demos/dnd2/images/insert-add.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div id="loader" class="hidden_soft"></div>
+        <div id="datas" data-href="{link data!}" class="hidden_soft">
+            <select name="hero"> </select>
+            <table id="hero_comparision" class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Hráč</th>
+                        <th>Oblíbenost</th>
+                        <th>Her</th>
+                        <th>Win rate</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="4">NIC</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+{/block}
+

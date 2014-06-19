@@ -1,0 +1,173 @@
+body {
+	font-size: 15px;
+	line-height: 1.6;
+	color: #333;
+    background-color: #f5f5f5;
+}
+
+h1 {
+	color: #3484D2;
+}
+
+#ajax-spinner {
+	margin: 15px 0 0 15px;
+	padding: 13px;
+	background: white url('../images/spinner.gif') no-repeat 50% 50%;
+	font-size: 0;
+	z-index: 123456;
+	display: none;
+}
+
+div.flash {
+	color: black;
+	background: #FFF9D7;
+	border: 1px solid #E2C822;
+	padding: 1em;
+	margin: 1em 0;
+}
+
+a[href^="#error:"] {
+	background: red;
+	color: white;
+}
+
+form th, form td {
+	vertical-align: top;
+	font-weight: normal;
+}
+
+form th {
+	text-align: right;
+}
+
+form .required label {
+	font-weight: bold;
+}
+
+form .error {
+	color: #D00;
+	font-weight: bold;
+}
+
+html.js .jshidden {
+	display: none;
+}
+
+.btn-outline {
+    color: #563d7c;
+    background-color: transparent;
+    border-color: #563d7c;
+}
+
+.hidden_soft {
+    display: none;
+}
+
+.center {
+    text-align: center;
+}
+
+.toggler > div {
+    display: none;
+}
+
+#source_add {
+    text-align: center;
+}
+
+#source_add > div {
+    display: inline-block;
+    width: 49%;
+}
+
+.header.content {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.add_box > div {
+    margin-top: 10px;
+}
+
+.add_box > div > img {
+    cursor: pointer;
+}
+
+input[type=text] {
+    padding: 4px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.loading {
+    height: 42px;
+    width: 100px;
+    /*background: url('../images/loading.gif') no-repeat;*/
+    margin: 0 auto;
+    /*background-size: 100%;*/
+}
+
+#loader {
+    height: 42px;
+    width: 42px;
+    background: url('../images/loading.gif') no-repeat;
+    margin: 0 auto;
+    background-size: 100%;
+}
+
+#players_info .list img {
+    width: 42px;
+    height: 42px;
+}
+
+.minimized_content {
+    margin: 0 auto;
+    width: 40%;
+}
+
+.jumbotron {
+    background-color: #563d7c;
+    color: #fff;
+}
+
+.jumbotron input[type=text] {
+    color: black;
+}
+
+.btn-outline-inverse {
+    color: #fff;
+    background-color: transparent;
+    border-color: #cdbfe3;
+}
+
+.btn-outline-inverse {
+    color: #fff;
+    background-color: transparent;
+    border-color: #cdbfe3
+}
+
+.btn-outline-inverse:hover, .btn-outline-inverse:focus, .btn-outline-inverse:active {
+    color: #563d7c!important;
+    text-shadow: none;
+    background-color: #fff;
+    border-color: #fff
+}
+
+ul, ol {
+    list-style: none;
+    padding: 0;
+}
+
+.ib {
+    display: inline-block;
+}
+
+.header.content img {
+    margin-right: 10px;
+}
+
+.header.content a {
+    color: #fff;
+}
