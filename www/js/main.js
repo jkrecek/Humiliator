@@ -92,6 +92,7 @@ function onLoaded() {
 
     var select = $("#datas > select[name=hero]");
     var sorted_keys = Object.keys(heroes).sort()
+    $("option", select).remove();
     $("<option/>", { value : 'none' })
         .text("-- Vyber hrdinu pyčo")
         .appendTo(select);
